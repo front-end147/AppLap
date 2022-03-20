@@ -35,5 +35,28 @@ slideSpans.forEach(slideSpan => {
       proPrice.innerHTML = "$70";
       proPrice.setAttribute("data-time", "/year");
     }
-  })
-})
+  });
+});
+
+const links = document.querySelectorAll(".link");
+
+links.forEach (link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (e.target.dataset.nav) {
+      document.getElementById(e.target.dataset.nav).scrollIntoView({behavior: "smooth"});
+    }
+  });
+});
+
+const items = document.querySelectorAll(".FAQ .item"),
+      allItemsQ = document.querySelectorAll(".FAQ .item .question");
+
+allItemsQ.forEach(itemQ => {
+  itemQ.addEventListener("click", (e) => {
+    items.forEach(item => {
+      item.classList.remove("active");
+    });
+    e.target.parentElement.classList.add("active");
+  });
+});

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppLab</title>
     <!-- icon of website -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- normalize css file -->
@@ -22,16 +22,16 @@
         <div class="nav__menu">
           <i class="fa-solid fa-bars" id="toggle"></i>
           <ul class="nav__ul">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Key Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Testiminial</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#" class="active link" data-nav="home">Home</a></li>
+            <li><a href="#" class="link" data-nav="features">Key Features</a></li>
+            <li><a href="#" class="link" data-nav="pricing">Pricing</a></li>
+            <li><a href="#" class="link" data-nav="testiminial">Testiminial</a></li>
+            <li><a href="#" class="link" data-nav="FAQ">FAQ</a></li>
           </ul>
           <a href="#" class="btn try">Tryforfree</a>
         </div>
       </nav>
-      <div class="banner">
+      <div class="banner section" id="home">
         <img src="images/Home page.png" alt="" class="shapes" />
         <div class="container">
           <div class="content">
@@ -66,7 +66,7 @@
       </div>
     </section>
     <!-- awesome apps features -->
-    <section class="awesome__features">
+    <section class="awesome__features section" id="features">
       <div class="container">
         <div class="phone__container">
           <img src="images/awesome-shape.png" alt="" class="background__shape" />
@@ -149,8 +149,10 @@
     <!-- why use our app -->
     <section class="whyUseApp">
       <div class="top">
-        <h2>Why you should choose our app</h2>
-        <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+        <div class="container">
+          <h2>Why you should choose our app</h2>
+          <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+        </div>
         <div class="container">
           <div class="box red">
             <div class="img_box">
@@ -240,9 +242,11 @@
       </div>
     </section>
     <!-- pricing -->
-    <section class="pricing" id="pricing">
+    <section class="pricing section" id="pricing">
+     <div class="container">
       <h2>Get awesome features, without extra charges</h2>
       <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+     </div>
       <div class="slide_price monthlyActive" id="slidePrice">
         <span id="month" class="active">Monthly</span>
         <span id="annual">Annually</span>
@@ -283,6 +287,95 @@
         </div>
       </div>
     </section>
+    <!-- testiminial -->
+    <!-- <section class="testiminial section" id="testiminial">
+      <div class="container">
+        <div class="left">
+          <img src="images/People images.png" alt="">
+        </div>
+        <div class="right">
+          <h2>Meet Client Satisfaction by using product</h2>
+          <p>The rise of mobile devices transforms the way we consume, elevant channels such as Facebook.</p>
+          <div class="user_testimonial">
+            <div class="someone">
+              <div class="icons"></div>
+              <h4>User friendly & Customizable</h4>
+              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+              <div class="user">
+                <img src="" alt="">
+                <div class="content">
+                  <h4>Zoltan Nemeth</h4>
+                  <p>CEO of Pixler Lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="control_icons">
+              <div id="left" class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="line"></div>
+              <div id="right" class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- FAQ section -->
+    <section class="FAQ section" id="FAQ">
+      <div class="container">
+        <h2>Frquently asked questions</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet error suscipit nemo quo quibusdam fuga omnis incidunt nostrum quae?</p>
+        <div class="item_container">
+          <div class="item active">
+            <div class="question"><h3>How to contact with rides emergency?</h3><i class="fa-solid fa-plus"></i></div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, natus officia ratione odit harum id sed sit cumque consectetur reiciendis dolore autem consequuntur amet maiores molestias, nemo tempora similique tempore recusandae sint repellendus ipsam?</div>
+          </div>
+          <div class="item">
+            <div class="question"><h3>App installation failed, how to update system information?</h3><i class="fa-solid fa-plus"></i></div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, natus officia ratione odit harum id sed sit cumque consectetur reiciendis dolore autem consequuntur amet maiores molestias, nemo tempora similique tempore recusandae sint repellendus ipsam?</div>
+          </div>
+          <div class="item">
+            <div class="question"><h3>website response taking time, how to improve?</h3><i class="fa-solid fa-plus"></i></div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, natus officia ratione odit harum id sed sit cumque consectetur reiciendis dolore autem consequuntur amet maiores molestias, nemo tempora similique tempore recusandae sint repellendus ipsam?</div>
+          </div>
+          <div class="item">
+            <div class="question"><h3>New update fixed all bug and issues</h3><i class="fa-solid fa-plus"></i></div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, natus officia ratione odit harum id sed sit cumque consectetur reiciendis dolore autem consequuntur amet maiores molestias, nemo tempora similique tempore recusandae sint repellendus ipsam?</div>
+          </div>
+          <div class="item">
+            <div class="question"><h3>How to contact with rides emergency?</h3><i class="fa-solid fa-plus"></i></div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, natus officia ratione odit harum id sed sit cumque consectetur reiciendis dolore autem consequuntur amet maiores molestias, nemo tempora similique tempore recusandae sint repellendus ipsam?</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- app download -->
+    <!-- <section class="app_download section">
+      <div class="container">
+
+      </div>
+    </section> -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <a href="index.html" class="logo"><span>App</span>Lap</a>
+        <ul class="list">
+          <li><a href="#" class="link" data-nav="home">Home</a></li>
+          <li><a href="#" class="link" data-nav="features">Key Features</a></li>
+          <li><a href="#" class="link" data-nav="pricing">Pricing</a></li>
+          <li><a href="#" class="link" data-nav="testiminial">Testiminial</a></li>
+          <li><a href="#" class="link" data-nav="">FAQ</a></li>
+        </ul>
+        <ul class="social_icons">
+          <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-hashtag"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-github-square"></i></a></li>
+        </ul>
+        <div class="copyright">
+          <div class="code">Coded By <a href="#">Hamdy Ahmed</a></div>
+          <div class="design">Copyright&copy; Arifur Rahman Tushar 2019. All Rights reserved</div>
+        </div>
+      </div>
+    </footer>
     <!-- javascript -->
     <!-- <script src="js/all.min.js"></script> -->
     <script src="js/script.js"></script>
